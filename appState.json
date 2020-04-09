@@ -1,0 +1,155 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "77944983-e513-45ab-9878-548de1f7e5cc": {
+        "id": "77944983-e513-45ab-9878-548de1f7e5cc",
+        "parent": null,
+        "name": "elastidelete.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "elastidelete.js",
+        "cursor": {
+          "lineNumber": 1,
+          "column": 1
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "elastidelete"
+        },
+        "triggers": []
+      },
+      "58da26a2-ab8e-4b16-9489-0d7bf6b0ed32": {
+        "id": "58da26a2-ab8e-4b16-9489-0d7bf6b0ed32",
+        "parent": null,
+        "name": "ClusterManager.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "ClusterManager.js"
+      }
+    },
+    "openFiles": [
+      "77944983-e513-45ab-9878-548de1f7e5cc"
+    ],
+    "currentFileId": "77944983-e513-45ab-9878-548de1f7e5cc",
+    "resources": {
+      "redis-k2": {
+        "name": "redis-k2",
+        "type": "Redis",
+        "config": {
+          "clusterConfig": {
+            "engineType": "redis",
+            "clusterSpec": {
+              "instanceFamily": "t2",
+              "nodeTypeClass": "cache.t2.small",
+              "engineVersion": "2.8.19",
+              "clusterModeEnabled": false,
+              "autoFailoverEnabled": true,
+              "numOfShards": 3,
+              "numOfReplicas": 2
+            },
+            "clusterSetting": {
+              "clusterName": "k2",
+              "clusterDescription": "k2",
+              "port": 6379
+            },
+            "vpcSpec": {
+              "vpcType": "NEW",
+              "existingVPC": {
+                "vpcID": "",
+                "subNetID": "",
+                "securityGroupID": ""
+              },
+              "newVPC": {
+                "vpcName": "k2",
+                "vpcIPv4CIDR": "10.0.0.0/16",
+                "subnetName": "k2",
+                "subnetIPv4CIDR": "10.0.0.0/20"
+              }
+            },
+            "host": "",
+            "doesExist": false,
+            "alreadyDeployed": false,
+            "redisClient": "",
+            "external": false
+          },
+          "clusterResources": [],
+          "editMode": false,
+          "enableInject": true,
+          "isGlobalEditMode": false,
+          "isClusterSelectionValid": true,
+          "isNewFromGlobal": false,
+          "mode": 0,
+          "operation": {
+            "str": "REDIS_RENAME",
+            "operation": "rename",
+            "displayName": "RENAME",
+            "type": {
+              "str": "REDIS_KEYS",
+              "type": "keys",
+              "displayName": "KEYS"
+            }
+          },
+          "params": [],
+          "projectRegion": "us-east-1",
+          "reusableMode": false,
+          "showOperations": true,
+          "validator": {
+            "validatableFields": {},
+            "validity": true
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "slappforge-sdk-redis": {
+          "name": "slappforge-sdk-redis",
+          "language": "nodejs",
+          "version": "0.0.3",
+          "dev": false,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "elastidelete",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1586417168416
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "elastidelete",
+      "url": "https://github.com/Kumudikatest/elastidelete"
+    }
+  }
+}
